@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Escapes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #eaeaea;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            
+        }
+
+        .header-content {
+            max-width: 50%;
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #1a1818;
+        }
+
+        .header-content p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #1a1818;
+        }
+
+        .header-content .cta {
+            padding: 12px 24px;
+            background: #F1D3CE;
+            color: #1e1d1d;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .header-content .cta:hover {
+            background-color: #e1b9b0;
+        }
+
+        .header-image {
+            max-width: 50%;
+        }
+
+        .header-image img {
+            width: 100%;
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 300px;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .card-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+
+        .search-bar-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .search-bar {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #e1b9b0b1;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .search-button:hover {
+            background-color: #b8a58a;
+        }
+        
+
+        .contact-us {
+            background-color: #ffe6cc; /* Light match to golden orange */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .contact-us {
+            background-color: #eceae6; /* Golden orange color */
+            color: rgb(10, 10, 10);
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            margin: 20px auto;
+            width: 80%;
+            max-width: 350px;
+            border-radius: 10px;
+        }
+        .contact-us h2 {
+            margin-bottom: 20px;
+        }
+        .contact-us form {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .contact-us input, .contact-us select {
+            width: calc(100% - 22px); /* Adjust for padding */
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .contact-us button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #e1b9b0;
+            color: rgb(20, 16, 16);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-us button:hover {
+            background-color: #c7c4bf;
+        }
+        footer{
+            background-color: #e3e2e2e9;
+        }
+ 
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>The Grand Moment</h1>
+            <p>Discover the world’s most breathtaking beaches with its unique charm and allure.”</p>
+            <a href="#" class="cta">Explore the Tour</a>
+        </div>
+        <div class="header-image">
+            <img src="images\head.jpg" alt="Beach Image">
+        </div>
+    </header>
+    <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Search for beaches...">
+        <button class="search-button">Search</button>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="images\b1.jpg" alt="Beach 1">
+            <div class="card-content">
+                <h3 class="card-title" align="center">"South Pacific Dream"</h3>
+                <p class="card-content">Matira Beach is famous for its soft white sand, crystal-clear lagoon, and breathtaking sunsets. It’s a perfect spot for snorkeling and relaxation.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images\b2.jpg" alt="Beach 2">
+            <div class="card-content">
+                <h3 class="card-title" align="center">"Caribbean Classic"</h3>
+                <p class="card-content">This long stretch of coral-sand beach is perfect for swimming, snorkeling, and enjoying the Caribbean sun. It’s also known for its luxurious resorts and vibrant nightlife.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images\b3.jpg" alt="Beach 2">
+            <div class="card-content">
+                <h3 class="card-title" align="center">"Rosy Retreat"</h3>
+                <p class="card-content">Pink Sands Beach is renowned for its unique pink sand, which gets its color from crushed coral and shells. It’s a serene and picturesque spot.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="images\b4.jpg" alt="Beach 1">
+            <div class="card-content">
+                <h3 class="card-title" align="center">"Sunset Spectacle"</h3>
+                <p class="card-content">Ipanema Beach is famous for its breathtaking sunsets, Ipanema Beach is a vibrant spot where different subcultures gather. It’s a place for both relaxation and social activities</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images\b5.jpg" alt="Beach 2">
+            <div class="card-content">
+                <h3 class="card-title" align="center">"Surfer’s Paradise"</h3>
+                <p class="card-content">The Pass, Byron Bay known for its right-hand point break, The Pass is a haven for surfers. It offers stunning views, local Aboriginal history, and scenic hiking trails</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images\b6.jpg" alt="Beach 2">
+            <div class="card-content">
+                <h3 class="card-title" align="center">"Pristine Perfection"</h3>
+                <p class="card-content">Whitehaven Beach is known for its pure white silica sand and crystal-clear waters, Whitehaven Beach is often considered one of the most beautiful beaches in the world</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="images\b7.jpg" alt="Beach 1">
+            <div class="card-content">
+                <h3 class="card-title" align="center">"Tropical Paradise"</h3>
+                <p class="card-content">Mnemba Island, is a  private island offers pristine white sands and turquoise waters. It’s a perfect spot for snorkeling and diving and it is a favorite spot for photographers and nature lovers.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images\b8.jpg" alt="Beach 2">
+            <div class="card-content">
+                <h3 class="card-title" align="center">"Lunar Landscape"</h3>
+                <p class="card-content">Sarakiniko is famous for its unique white rock formations that resemble a lunar landscape. It’s a great spot for photography and exploration</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images\b9.jpg" alt="Beach 2">
+            <div class="card-content">
+                <h3 class="card-title" align="center">"Surfing Mecca"</h3>
+                <p class="card-content">Waikiki Beach is renowned for its gentle waves, making it an ideal spot for beginner surfers. It’s also known for its stunning views of Diamond Head</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<footer>
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Name">
+            <select>
+                <option>Your Home Town</option>
+                <option>Chennai</option>
+                <option>Tiruvallur</option>
+            </select>
+            <select>
+                <option>Where would you like to go?</option>
+                <option>Australia</option>
+                <option>Brazil</option>
+                <option>Tanzania</option>
+                <option>Greece</option>
+                <option>Hawaii</option>
+                
+            </select>
+            <input type="text" placeholder="Contact Number">
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </section>
+    
+</footer>
+
+</html>
